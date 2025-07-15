@@ -251,6 +251,15 @@
           <label for="accessory-twist" class="text-gray-700 flex-1">Twist</label>
           <input type="number" id="quantity-twist" value="9" step="0.1" min="0" class="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-green-400"/>
         </div>
+        <!-- Bouteilles personnalisées -->
+<div class="flex items-center space-x-4">
+  <input type="checkbox" id="accessory-bouteilles-perso" value="Bouteilles personnalisées" class="h-5 w-5 text-green-600 border-gray-300 rounded focus:ring-green-500"/>
+  <label for="accessory-bouteilles-perso" class="text-gray-700 flex-1">Bouteilles personnalisées</label>
+  <input type="number" id="quantity-bouteilles-perso" value="4" step="0.1" min="0" class="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-green-400"/>
+</div>
+
+        
+        
       </div>
 
       <!-- Bouton Ajouter Accessoires -->
@@ -381,6 +390,8 @@
           { id: 'accessory-grandes-swing', name: 'Grandes swing', qtyId: 'quantity-grandes-swing' },
           { id: 'accessory-petites-swing', name: 'Petites swing', qtyId: 'quantity-petites-swing' },
           { id: 'accessory-twist', name: 'Twist', qtyId: 'quantity-twist' }
+          { id: 'accessory-bouteilles-perso', name: 'Bouteilles personnalisées', qtyId: 'quantity-bouteilles-perso' }
+
         ];
 
         // Filtrer les accessoires cochés
